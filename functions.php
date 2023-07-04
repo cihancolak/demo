@@ -21,8 +21,16 @@ function authorize($condition, $status = Response::FORBIDDEN) {
     
 }
 
+function base_path($spath) 
+{
+    return BASE_PATH . $spath;
+}
 
-
+function viewing($spath, $attributes = []) {
+    
+    extract($attributes);
+    require base_path('views/ . $spath');
+}
 
 
 
