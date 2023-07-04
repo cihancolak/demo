@@ -1,10 +1,23 @@
-##Force SSL 
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
 
-#Normal way (in case you need to deploy to NON-heroku)
-RewriteCond %{HTTPS} !=on
+    RewriteEngine On
 
-#Heroku way
-RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-#If neither above conditions are met, redirect to https
-RewriteRule ^ https://%
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    AddType 'text/css; charset=UTF-8' css
+
+</IfModule>
