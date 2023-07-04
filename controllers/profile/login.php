@@ -10,6 +10,8 @@
 
 
 
+viewing("profile/login.view.php", [
+    'heading' => 'Login',
+]);
 
 
-require "views/profile/login.view.php";

@@ -1,6 +1,5 @@
 <?php
 
-echo ' asdasd';
 return [
     'database' => [
         'host' => 'localhost',

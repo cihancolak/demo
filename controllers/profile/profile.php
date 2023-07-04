@@ -8,7 +8,8 @@
 
 
 
+viewing("profile/profile.view.php", [
+    'heading' => 'Home',
+]);
 
 
-
-require "views/profile/profile.view.php";

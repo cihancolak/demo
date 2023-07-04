@@ -3,13 +3,15 @@
 
 
 
-$heading = "Sign";
+
+
+
+
+viewing("profile/sign.view.php", [
+    'heading' => 'Sign',
+]);
 
 
 
 
 
-
-
-
-require "views/profile/sign.view.php";

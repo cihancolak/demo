@@ -1,5 +1,5 @@
-<?php require('partials/head.php') ?>
-<?php require('partials/navigation.php') ?>
+<?php require ('partials/head.php') ?>
+<?php require ('partials/navigation.php') ?>
 
 <!--
   This example requires some changes to your config:
@@ -58,4 +58,4 @@
 
 </main>
 
-<?php require('partials/footer.php') ?>
+<?php require ('partials/footer.php') ?>

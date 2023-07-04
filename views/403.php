@@ -1,5 +1,5 @@
-<?php require('partials/head.php') ?>
-<?php require('partials/navigation.php') ?>
+<?php require ('partials/head.php') ?>
+<?php require ('partials/navigation.php') ?>
 
 
 <main>
@@ -13,4 +13,4 @@
 </main>
 
 
-<?php require('partials/footer.php') ?>
+<?php require ('partials/footer.php') ?>

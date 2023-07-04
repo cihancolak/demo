@@ -1,5 +1,5 @@
-<?php require('views/partials/head.php') ?>
-<?php require('views/partials/navigation.php') ?>
+<?php require base_path('views/partials/head.php') ?>
+<?php require base_path('views/partials/navigation.php') ?>
 
 
 <main>
@@ -44,5 +44,5 @@
 
 </main>
 
-<?php require('views/partials/footer.php') ?>
+<?php require base_path('views/partials/footer.php') ?>
 

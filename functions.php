@@ -29,7 +29,7 @@ function base_path($spath)
 function viewing($spath, $attributes = []) {
     
     extract($attributes);
-    require base_path('views/ . $spath');
+    require base_path('views/' . $spath);
 }
 
 
