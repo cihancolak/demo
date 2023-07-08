@@ -1,5 +1,6 @@
 <?php
 
+
 function routesToControllers($uri, $routes) {
 
 
@@ -13,7 +14,7 @@ function routesToControllers($uri, $routes) {
 function abort($code = 404){
 
     http_response_code($code);
-    require "views/{$code}.php";
+    require space_path("views/{$code}.php");
    
     die();
 

@@ -1,5 +1,6 @@
 <?php
 
+
 function dd($value)
 {
 echo "<pre>";
@@ -23,7 +24,7 @@ function authorize($condition, $status = Response::FORBIDDEN) {
 
 function space_path($spath) 
 {
-    return BASE_PATH . $spath;
+    return SPACE_PATH . $spath;
 }
 
 function viewing($spath, $attributes = []) {

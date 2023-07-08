@@ -1,5 +1,7 @@
 <?php
 
+use Cores\Database;
+
 $config = require space_path('config.php');
 $db = new Database($config['database']);
 
@@ -11,3 +13,7 @@ viewing("notes/index.view.php", [
     'heading' => 'My Notes',
     'notes' => $notes
 ]);
+
+
+
+

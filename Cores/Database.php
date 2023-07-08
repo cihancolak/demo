@@ -1,5 +1,9 @@
 <?php
 
+namespace Cores;
+
+use PDO;
+
 class Database
 {
     public $connection;

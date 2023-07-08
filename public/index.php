@@ -1,12 +1,18 @@
 <?php 
 
-const BASE_PATH = __DIR__ .'/../';
 
-require  BASE_PATH .'Cores/functions.php';
+
+const SPACE_PATH = __DIR__ .'/../';
+
+require  SPACE_PATH.'Cores/functions.php';
 
 
 spl_autoload_register(function ($class) {
-    require space_path("Cores/" . $class . '.php');
+
+    $class = str_replace('\\', DIRECTORY_SEPARATOR, $class);
+
+    require space_path("{$class}.php");
+
 });
 
 
