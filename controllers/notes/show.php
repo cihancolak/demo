@@ -1,12 +1,11 @@
 <?php
 
 
-$config = require base_path('config.php');
+$config = require space_path('config.php');
 $db = new Database($config['database']);
 
 
 
-$heading = 'Note';
 $currentUserId = 1;
 
 

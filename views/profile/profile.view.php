@@ -1,5 +1,5 @@
-<?php require base_path('views/partials/head.php') ?>
-<?php require base_path('views/partials/navigation.php') ?>
+<?php require space_path('views/partials/head.php') ?>
+<?php require space_path('views/partials/navigation.php') ?>
 
 <div>
   <div class="px-4 sm:px-0">
@@ -68,4 +68,4 @@
 </div>
 
 
-<?php require base_path('views/partials/footer.php') ?>
+<?php require space_path('views/partials/footer.php') ?>

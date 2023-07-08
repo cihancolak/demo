@@ -21,7 +21,7 @@ function authorize($condition, $status = Response::FORBIDDEN) {
     
 }
 
-function base_path($spath) 
+function space_path($spath) 
 {
     return BASE_PATH . $spath;
 }
@@ -29,7 +29,7 @@ function base_path($spath)
 function viewing($spath, $attributes = []) {
     
     extract($attributes);
-    require base_path('views/' . $spath);
+    require space_path('views/' . $spath);
 }
 
 

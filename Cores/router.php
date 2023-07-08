@@ -1,19 +1,15 @@
 <?php
 
-
-
 function routesToControllers($uri, $routes) {
 
 
     if(array_key_exists($uri, $routes)) {
-        require  $routes[$uri];    } 
+        require  space_path($routes[$uri]);    } 
         
         else {
         abort();
     }
 }
-
-
 function abort($code = 404){
 
     http_response_code($code);
@@ -23,21 +19,9 @@ function abort($code = 404){
 
 }
 
-
-
-
-
-
-
-
-$routes = require 'routes.php';
-
-
-
+$routes = require space_path('routes.php');
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
-
-
 
 
 routesToControllers($uri,$routes);
