@@ -4,6 +4,7 @@ use Cores\Database;
 use Cores\Validator;
 
 
+
 $config = require space_path('config.php');
 $db = new Database($config['database']);
 

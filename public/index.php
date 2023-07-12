@@ -1,7 +1,5 @@
 <?php 
 
-
-
 const SPACE_PATH = __DIR__ .'/../';
 
 require  SPACE_PATH.'Cores/functions.php';
